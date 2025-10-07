@@ -1,0 +1,20 @@
+/* src/styles.css - CÓDIGO DEFINITIVO */
+
+/* 1. Define a imagem de fundo para o elemento raiz da página */
+html {
+  background-image: url('/assets/img/fundo-home.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100%; /* Garante que o fundo cubra toda a altura */
+}
+
+/* 2. Garante que o body e o componente principal do Angular sejam transparentes */
+body, app-root {
+  background: transparent !important;
+}
+
+/* 3. Define a fonte padrão */
+body {
+  font-family: 'Poppins', sans-serif;
+}

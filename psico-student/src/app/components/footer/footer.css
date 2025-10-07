@@ -1,0 +1,20 @@
+/* Em src/app/components/footer/footer.component.css */
+.glass-footer {
+  background: rgba(25, 28, 31, 0.7); /* Mesma cor da navbar para consistência */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+.social-link {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: white; /* Destaque ao passar o mouse */
+}

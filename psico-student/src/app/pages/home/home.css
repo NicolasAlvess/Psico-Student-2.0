@@ -1,0 +1,90 @@
+/* Em src/app/pages/home/home.css */
+.hero-background {
+  /* A imagem foi removida daqui! */
+  padding: 80px 20px;
+  margin-top: 70px;
+}
+
+
+/* Camada 2: O painel de vidro fosco */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 50px;
+  color: white;
+  text-align: center;
+}
+
+/* Ajustes finos no texto e botão dentro do painel */
+.glass-panel h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.glass-panel p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.glass-panel .btn-primary {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Adicione este código no final de home.css */
+.glass-card {
+  /* Efeito de vidro - desta vez claro */
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  color: white; /* Texto branco */
+  height: 100%; /* Garante que os cards tenham a mesma altura */
+  transition: background 0.3s ease;
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.15); /* Fica um pouco mais claro ao passar o mouse */
+}
+
+/* Ajustes no texto e botão dentro do card de vidro */
+.glass-card .card-title {
+  color: white;
+}
+
+.glass-card .card-text {
+  color: rgba(255, 255, 255, 0.7); /* Texto secundário um pouco transparente */
+}
+
+.glass-card .btn-outline-dark {
+  border-color: white;
+  color: white;
+}
+
+.glass-card .btn-outline-dark:hover {
+  background-color: white;
+  color: #212529;
+}
+
+/* Em src/styles.css */
+body {
+  /* A imagem de fundo agora é global */
+  background-image: url('/assets/img/fundo-home.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  /* A fonte continua global */
+  font-family: 'Poppins', sans-serif;
+}

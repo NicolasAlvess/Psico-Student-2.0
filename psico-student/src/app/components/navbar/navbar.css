@@ -1,0 +1,15 @@
+/* Em src/app/components/navbar/navbar.css */
+.glass-navbar {
+  /* Efeito de vidro */
+  background: rgba(25, 28, 31, 0.7); /* Cor escura semi-transparente */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Borda inferior sutil */
+
+  /* Posicionamento fixo no topo */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030; /* Garante que fique na frente de tudo */
+  transition: background 0.3s ease; /* Transição suave */
+}

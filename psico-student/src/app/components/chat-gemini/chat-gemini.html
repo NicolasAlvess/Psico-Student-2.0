@@ -1,0 +1,17 @@
+<div class="chat-container">
+  <h3>Pergunte ao Assistente de IA</h3>
+  <div class="chat-box">
+    <textarea [(ngModel)]="question" placeholder="Digite sua dúvida sobre psicologia..."></textarea>
+    <button (click)="askQuestion()" [disabled]="isLoading">
+      <span *ngIf="!isLoading">Perguntar</span>
+      <span *ngIf="isLoading">Pensando...</span>
+    </button>
+  </div>
+  <div *ngIf="answer" class="answer-box">
+    <strong>Resposta:</strong>
+    <p>{{ answer }}</p>
+  </div>
+  <div *ngIf="error" class="error-box">
+    <p>{{ error }}</p>
+  </div>
+</div>
